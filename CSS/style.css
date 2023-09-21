@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F1F1F1;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* FOR HEADER STYLING */
+header{
+    padding: 50px;
+}
+
+header h1{
+    word-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+header h1, header p{
+    text-align: center;
+}
+
+header span, .active{
+    background-color: #000;
+    color: #fff;
+    padding: 2px 5px 3px 5px;
+}
+
+/* SECTION */
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: auto;
+}
+
+/* FOR LEFT CONTAINER */
+.left-container{
+    width: 66%;
+}
+
+.left-container .left{
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 8px 3px #BDBDBD;
+}
+
+.left-container .left-content{
+    padding: 18px;
+}
+
+.left-container .left-content span{
+    color: #B9B9B9;
+}
+
+.left-container .left-content h3{
+    margin: 20px 0;
+}
+
+.left-container .btn-comment{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left-container .btn-comment a{
+    text-decoration: none;
+    color: #000;
+    padding: 12px 20px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.left-container .btn-comment span{
+    background-color: #000;
+    padding: 3px 8px;
+    color: #fff;
+}
+
+.left-container .btn-comment .span1{
+    border-radius: 50%;
+}
+
+.left-container .btn-comment .fas{
+    font-size: 10px;
+}
+
+.left-container .btn-comment a:hover{
+    background-color: #CCCCCC;
+}
+
+h1, h2, .btn-comment p{
+    font-weight: 500;
+}
+
+h3{
+    font-weight: 400;
+}
+
+/* FOR RIGHT CONTAINER */
+.right-container{
+    width: 31%;
+}
+
+.right-container .right{
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 8px 3px #BDBDBD;
+}
+
+.right-container .right-headl, .right-container .tag{
+    padding: 20px;
+}
+
+.right-container .name{
+    padding: 10px;
+}
+
+.right-container .name h2{
+    margin-bottom: 20px;
+}
+
+.right-container .popular-posts{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 18px;
+}
+
+.right-container .popular-posts:hover{
+    background-color: #CCCCCC;
+}
+
+.right-container .popular-posts:not(:last-child){
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.right-container .popular-img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.right-container .list-items{
+    background-color: #fff;
+    padding: 15px;
+}
+
+.right-container ul{
+    margin-bottom: 20px;
+}
+
+.right-container li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+.right-container li:not(.active){
+    background-color: #F1F1F1;
+}
+
+/* FOR THE FOOTER */
+footer{
+    background-color: #616161;
+    padding: 40px 15px;
+}
+
+footer .footer-btn{
+    margin-bottom: 40px;
+}
+
+footer .footer-btn .previous{
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    margin-right: 5px;
+}
+
+footer .footer-btn .previous:hover{
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #000;
+}
+
+footer .footer-btn .next{
+    background: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+footer .footer-btn .next:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+footer p, footer a:last-child{
+    color: #fff;
+}
+
+/* RESPONSIVE */
+/* FOR TABLET SIZE */
+@media screen and (max-width: 768px) {
+    .left-container, .right-container{
+        width: 100%;
+    }
+    section{
+        display: block;
+    }
+    .btn-comment p{
+        display: none;
+    }
+}
